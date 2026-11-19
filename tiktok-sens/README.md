@@ -23,7 +23,15 @@ Fonty: `sh ../narzedzia/pobierz_fonty.sh` (raz).
   Fonty: Poppins (ExtraBold/Bold/Medium), Caveat Bold do „odręcznych” zdań.
 - Karta końcowa: logo SENS + „Każda emocja ma sens.” + jedno CTA + senswroclaw.pl. Nigdy nie umieszczać
   osoby w kole logo.
-- Muzyka tylko oryginalna (syntetyzowana w kodzie): nowoczesna, rytmiczna, chwytliwa; bez wolnych,
+- Muzyka tylko oryginalna, ale na PRAWDZIWYCH instrumentach: `narzedzia/tt_muzyka.py` (bank GeneralUser GS —
+  licencja pozwala na użycie komercyjne; `sh narzedzia/pobierz_dzwieki.sh` raz na sesję) + efekty (pogłos, kompresja,
+  sidechain, filtr na intro). Wzór: `tt_02_co_slyszy_dziecko.py` (pop/house 108 BPM: piano elektryczne, tłumiona gitara,
+  bas syntezatorowy, zestaw Dance, krótki lead, wejścia z crash + uderzeniem). Rodrigo (19.11.2026): muzyka z tonów
+  sinusowych (tt_01) jest „okropna, podstawowa, dziecinna, nudna, nie pasuje” — NIE używać już `Mix` z tt_base.
+  Unikać: dzwoneczków, celesty, kalimby, pozytywki, prostych arpeggiów durowych, wolnych padów, heavy metalu, hip-hopu.
+  Akordy septymowe/nonowe, rytm i energia od 1. sekundy, muzyka dopasowana do nastroju tematu, różne style co tydzień
+  (pop/house, akustyczny pop z gitarą, nu-disco, kinowy puls…). Sprawdzać poziomy sekcji (RMS) i spektrogram —
+  „whoosh” cicho, przerwa nie może być ciszą. Głośność −14 LUFS, szczyt ≤ −1 dBTP (robi `render`).
   nudnych padów ambient, bez heavy metalu i hip-hopu. Głośność −14 LUFS, szczyt ≤ −1 dBTP (robi `render`).
 
 ## Serie (rotacja, max 2 filmy tygodniowo w tym samym formacie)

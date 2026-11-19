@@ -18,3 +18,8 @@
 - Gdyby Rodrigo przysłał nagranie bez napisów, można zrobić czystszą wersję.
 - Publikacja: PostSyncer (konektor w Claude). `tt_01_2347_zlosc` zaplanowany na pt 20.11.2026 20:30
   (post PostSyncer id 182049). Cykl darmowego planu: 19.11–18.12 → 1/20 wykorzystane.
+- 19.11 wieczorem: Rodrigo sam wrzucił wcześniej `tt_01` (złość / 23:47) na TikToka → zaplanowany post 182049
+  zamieniony na `tt_02_co_slyszy_dziecko` (seria „Co słyszy dziecko, gdy mówisz…”), pt 20.11 20:30.
+- Krytyka Rodrigo: filmy ładne, efekty dobre, ale muzyka okropna (podstawowa, dziecinna, nudna, nie pasuje).
+  Od tt_02 nowy silnik muzyki `tt_muzyka.py` (prawdziwe instrumenty + efekty). Obserwować reakcję.
+- Tematy użyte: złość u dziecka (23:47); komunikacja: „Uspokój się!”, „Nie płacz, nic się nie stało”, „Ile razy mam powtarzać?!”.
