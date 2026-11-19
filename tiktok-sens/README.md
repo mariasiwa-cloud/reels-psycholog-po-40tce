@@ -46,7 +46,10 @@ Co tydzień jeden nowy test formatu. Seria „Pieruś” jest pisana przez Rodri
   O ADHD/autyzmie: diagnozę stawia specjalista. Bez zawstydzania rodziców.
 - Polski poprawny i naturalny, ze wszystkimi znakami (ą ę ś ć ż ź ł ó ń).
 
-## Publikacja
-Metricool (marka SENS), sieć `tiktok`, `media` = link raw do `filmy/…mp4`, opis po polsku:
-hak w 1. linii, 2–4 krótkie linie, jedno pytanie albo jedno CTA, 3–5 hashtagów bez polskich znaków.
-Filmy zapraszające do usług SENS: `commercialContentOwnBrand: true`.
+## Publikacja (ręcznie, Rodrigo)
+Co poniedziałek o 14:00 zadanie robi 5 filmów na wtorek–sobotę i wysyła je Rodrigo w rozmowie razem z tekstami.
+Rodrigo planuje je sam w swoim Metricool (konto rcifuentes.sens, marka SENS, TikTok osobisty @senswroclaw;
+darmowy plan = 20 publikacji/mies.). Konektor Metricool w Claude należy do konta Marii (Instagram
+„psycholog po 40tce”) — NIE używać go do TikToka SENS.
+Opis po polsku: hak w 1. linii, 2–4 krótkie linie, jedno pytanie albo jedno CTA, 3–5 hashtagów bez polskich znaków.
+Teksty tygodnia: `TEKSTY_RRRR-MM-DD.md` (dzień, godzina, plik, opis).
