@@ -46,10 +46,12 @@ Co tydzień jeden nowy test formatu. Seria „Pieruś” jest pisana przez Rodri
   O ADHD/autyzmie: diagnozę stawia specjalista. Bez zawstydzania rodziców.
 - Polski poprawny i naturalny, ze wszystkimi znakami (ą ę ś ć ż ź ł ó ń).
 
-## Publikacja (ręcznie, Rodrigo)
-Co poniedziałek o 14:00 zadanie robi 5 filmów na wtorek–sobotę i wysyła je Rodrigo w rozmowie razem z tekstami.
-Rodrigo planuje je sam w swoim Metricool (konto rcifuentes.sens, marka SENS, TikTok osobisty @senswroclaw;
-darmowy plan = 20 publikacji/mies.). Konektor Metricool w Claude należy do konta Marii (Instagram
-„psycholog po 40tce”) — NIE używać go do TikToka SENS.
+## Publikacja (automatycznie, PostSyncer)
+Co poniedziałek zadanie robi 5 filmów i samo je planuje na wtorek–sobotę przez konektor **PostSyncer**
+(workspace „Maria Siwa” id 78389, konto TikTok @senswroclaw id 8260 — sprawdzić `list-accounts`).
+`create-post`: `schedule_type: schedule`, `media` = link raw do `filmy/…mp4`, `privacy_level: PUBLIC_TO_EVERYONE`;
+film zapraszający do usług SENS: `brand_organic_toggle: true`.
+Darmowy plan PostSyncer: 20 publikacji na cykl (cykl zaczyna się 19. dnia miesiąca) — nie przekraczać.
+Konektor Metricool w Claude należy do konta Marii (Instagram „psycholog po 40tce”) — NIE używać go do TikToka SENS.
 Opis po polsku: hak w 1. linii, 2–4 krótkie linie, jedno pytanie albo jedno CTA, 3–5 hashtagów bez polskich znaków.
-Teksty tygodnia: `TEKSTY_RRRR-MM-DD.md` (dzień, godzina, plik, opis).
+Teksty tygodnia: `TEKSTY_RRRR-MM-DD.md` (dzień, godzina, plik, opis, id posta w PostSyncer).

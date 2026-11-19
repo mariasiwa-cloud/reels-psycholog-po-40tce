@@ -16,3 +16,5 @@
   nowy hak „Psycholog? Terapeuta? Diagnoza? / Nie musisz wiedzieć, od czego zacząć.”, nagranie w ramce telefonu,
   czyste nagłówki nad telefonem, karta końcowa SENS, oryginalna muzyka, −14 LUFS. 32,7 s.
 - Gdyby Rodrigo przysłał nagranie bez napisów, można zrobić czystszą wersję.
+- Publikacja: PostSyncer (konektor w Claude). `tt_01_2347_zlosc` zaplanowany na pt 20.11.2026 20:30
+  (post PostSyncer id 182049). Cykl darmowego planu: 19.11–18.12 → 1/20 wykorzystane.
