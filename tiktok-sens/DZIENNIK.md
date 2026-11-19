@@ -10,3 +10,9 @@
   z bezpłatną rozmową wstępną (15–20 min, telefon lub wideo — tak jest na stronie 19.11.2026).
 - Tematy już użyte: złość / napady złości u dziecka; (wcześniej, poza repo) problemy w szkole, prośba o pomoc.
 - TUS z klockami LEGO zakończony — nie promować.
+
+## 2026-11-19 — tt_02_poznaj_sens
+- Przeróbka nagrania strony senswroclaw.pl od Rodrigo (z wklejonymi napisami): usunięty błąd w 1. sekundzie,
+  nowy hak „Psycholog? Terapeuta? Diagnoza? / Nie musisz wiedzieć, od czego zacząć.”, nagranie w ramce telefonu,
+  czyste nagłówki nad telefonem, karta końcowa SENS, oryginalna muzyka, −14 LUFS. 32,7 s.
+- Gdyby Rodrigo przysłał nagranie bez napisów, można zrobić czystszą wersję.
