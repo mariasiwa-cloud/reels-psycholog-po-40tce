@@ -9,7 +9,11 @@ Oddzielone od rolek Instagrama „psycholog po 40tce” (katalog główny repozy
   i dużej sali (bez ludzi).
 - `narzedzia/tt_base.py` — wspólne funkcje: kolory, fonty, strefa bezpieczna TikToka, tła, muzyka, render.
 - `narzedzia/tt_NN_*.py` — skrypt każdego filmu (`test OUTDIR` → arkusze klatek, `full OUT.mp4` → film).
-- `filmy/` — gotowe MP4 (publiczny link raw → Metricool).
+- `narzedzia/tt_klipy.py` — prawdziwe nagrania stock (`Clip`: kadr 9:16, powolny zoom, ciepła korekta), gotowa
+  muzyka Mixkit jako tło (`music_bed`: EQ bez ostrych wysokich, −17 LUFS, TP −1,5), karty tekstu i karta końcowa SENS
+  (`caption_card`, `end_card`, `draw_end`), `render_av`. Klipy i utwory pobierają się same do `narzedzia/klipy/` (git ignoruje).
+- `narzedzia/tt_sprawdz_audio.py FILM.mp4 [spektrogram.png]` — kontrola dźwięku (LUFS, true peak, RMS co 3 s, 5–10 kHz).
+- `filmy/` — gotowe MP4 (publiczny link raw → PostSyncer).
 - `DZIENNIK.md` — co opublikowano, liczby, wnioski. Czytać przed każdym nowym tygodniem.
 
 Fonty: `sh ../narzedzia/pobierz_fonty.sh` (raz).
@@ -47,6 +51,20 @@ Fonty: `sh ../narzedzia/pobierz_fonty.sh` (raz).
     Preferuj prawdziwe, produkowane, bezpłatne do użytku komercyjnego utwory (Mixkit, Pixabay Music, YouTube Audio
     Library, Free Music Archive – sprawdź licencję) albo bank instrumentów; zapisz źródło i licencję.
   - Porównaj z poprzednimi filmami: jeśli któryś był „zbyt głośny/stridentny” (film o ADHD), nie powtarzaj jego stylu.
+  - Od 23.11.2026: gotowe utwory Mixkit (Stock Music Free License — social media i reklamy online OK; bez remiksu
+    i bez rejestracji w Content ID) przez `music_bed` (−17…−17,5 LUFS, TP −1,5, low-pass 9,5 kHz, high-shelf −2,5 dB).
+    Dla porównania stary tt_02 (pop/house): −14,2 LUFS, TP −0,7 i 4,2% energii w 5–10 kHz → stąd „piszczał”.
+
+## Nagrania stock (Rodrigo, 23.11.2026: mniej kart z tekstem, więcej prawdziwego obrazu)
+- Mixkit: TYLKO klipy z „Mixkit Stock Video Free License” (sprawdzić na stronie klipu `data-license="videoFree"`).
+  „Restricted License” = zakaz w firmowych social mediach. Plik 1080p: `assets.mixkit.co/videos/ID/ID-1080.mp4`.
+  Uwaga: po ok. 30 zapytaniach Mixkit włącza blokadę Cloudflare — szukać oszczędnie, nie obchodzić blokady.
+- Coverr: licencja Coverr (użycie komercyjne bez atrybucji); NIE używać klipów „premium” (znak wodny) ani AI
+  (`user-ai-generation…`, `coverr-temp-…`). Plik: `cdn.coverr.co/videos/SLUG/1080p.mp4`.
+- Pexels/Pixabay z tego środowiska: 403/401 (Pexels wymaga klucza API).
+- Ludzie podobni do lokalnej publiczności; bez rozpoznawalnych dzieci (dłonie wolno); ekrany z grą/marką rozmyć.
+- Jeden koncept na film (zdanie „koncept w jednym zdaniu” w nagłówku skryptu), tekst w kartach, ≥ 2,4 s na komunikat,
+  przenikania łagodne (`smooth`), z ciemnego na jasne co najmniej 0,9 s (bez błysków).
 
 ## Serie (rotacja, max 2 filmy tygodniowo w tym samym formacie)
 1. **„23:47”** — pytanie, które rodzic wpisuje w nocy w wyszukiwarkę → podpowiedzi innych rodziców
