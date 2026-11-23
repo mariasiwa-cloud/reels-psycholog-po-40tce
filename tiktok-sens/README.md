@@ -77,3 +77,12 @@ Darmowy plan PostSyncer: 20 publikacji na cykl (cykl zaczyna się 19. dnia miesi
 Konektor Metricool w Claude należy do konta Marii (Instagram „psycholog po 40tce”) — NIE używać go do TikToka SENS.
 Opis po polsku: hak w 1. linii, 2–4 krótkie linie, jedno pytanie albo jedno CTA, 3–5 hashtagów bez polskich znaków.
 Teksty tygodnia: `TEKSTY_RRRR-MM-DD.md` (dzień, godzina, plik, opis, id posta w PostSyncer).
+
+## Reuse z Instagrama Marii i zdjęcia (Rodrigo, 23.11.2026)
+- Rolka dnia dla @psycholog_po_40tce o kursie „Środek, nie koniec” (start piątek 4 grudnia 2026) ma być spokojna i
+  nadaje się do ponownego użycia w SENS. Przed zrobieniem filmów TikTok sprawdź `do_publikacji/` (najnowsze pliki):
+  jeśli jest tam dzisiejsza lub wczorajsza rolka o kursie, użyj jej (wersja 9:16 bez zmian lub z drobną adaptacją i
+  kartą końcową SENS) jako JEDEN z 5 filmów tygodnia zamiast robić nowy o tym samym.
+- Zdjęcia dr Marii Siwej: folder `fotos_maria/` w korzeniu repozytorium (czytaj `fotos_maria/README.md`). Można je
+  wykorzystać w filmach SENS, gdy temat jest o Marii lub jej kursie; zasady: bez rozciągania, twarz w całości, bez
+  filtrów, bez żartów z wyglądu, tylko zdjęcia z tego folderu.
