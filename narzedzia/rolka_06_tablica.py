@@ -189,7 +189,8 @@ def prep():
     S["logo"] = asset("logo_poziom.png", 250)
 
 
-def draw_route(im, t, a):
+def draw_route(im, t, a, cy=1080, lc=None):
+    lc = lc or BOARD
     """linia trasy z punktem „Jesteś tutaj” pośrodku."""
     if a <= 0:
         return
@@ -199,10 +200,10 @@ def draw_route(im, t, a):
     p = ramp(t, 0, 0.9)
     x0, x1 = 150, 870
     xe = x0 + (x1 - x0) * p
-    d.line((x0, y, xe, y), fill=BOARD + (255,), width=10)
+    d.line((x0, y, xe, y), fill=lc + (255,), width=10)
     for x in (x0, x1):
         if x <= xe + 1:
-            d.ellipse((x - 16, y - 16, x + 16, y + 16), fill=CREAM + (255,), outline=BOARD + (255,), width=8)
+            d.ellipse((x - 16, y - 16, x + 16, y + 16), fill=CREAM + (255,), outline=lc + (255,), width=8)
     q = ramp(t, 0.6, 0.5)
     if q > 0:
         r = 26
@@ -211,7 +212,7 @@ def draw_route(im, t, a):
     paste(lay, S["r_a"], x0, y + 50, ramp(t, 0.3, 0.4))
     paste(lay, S["r_b"], x1, y + 50, ramp(t, 0.8, 0.4))
     paste(lay, S["here"], CX, y - 80 + 14 * (1 - q), q)
-    paste(im, lay, W / 2, 1080, a)
+    paste(im, lay, W / 2, cy, a)
 
 
 def frame(t):
