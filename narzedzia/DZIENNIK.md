@@ -13,3 +13,4 @@
 - 2026-11-18 | Budzisz się o 3:00 (rolka_02_zegar) | animowana historia noc→świt | filar 1
 - 2026-11-18 | Dwie burze hormonalne | metafora: prognoza pogody | filar 3
 - 2026-11-23 | Nie tylko Ty (kurs Środek, nie koniec) | czat/wiadomości + prawdziwe zdjęcie sali SENS, ciemny petrol→krem, neo-soul/pop 100 BPM | filar 1 + 5, zaproszenie (CTA DM ŚRODEK) | do_publikacji/2026-11-23_nie-tylko-ty-kurs-srodek.mp4
+- 2026-11-23 (recuperada 22.11) | Głód emocjonalny: „Nie mam silnej woli” → „Mam za sobą bardzo długi dzień” | notes/pismo odręczne + przeformułowanie CBT, tabela, lista do zaznaczenia; krem papier → ciemna zieleń; akustyczny pop 116 BPM | filar 2, wartość (CTA psychodietetyka w SENS) | do_publikacji/2026-11-23_glod-emocjonalny_recuperada.mp4
