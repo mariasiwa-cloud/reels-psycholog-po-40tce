@@ -32,7 +32,21 @@ Fonty: `sh ../narzedzia/pobierz_fonty.sh` (raz).
   Akordy septymowe/nonowe, rytm i energia od 1. sekundy, muzyka dopasowana do nastroju tematu, różne style co tydzień
   (pop/house, akustyczny pop z gitarą, nu-disco, kinowy puls…). Sprawdzać poziomy sekcji (RMS) i spektrogram —
   „whoosh” cicho, przerwa nie może być ciszą. Głośność −14 LUFS, szczyt ≤ −1 dBTP (robi `render`).
-  nudnych padów ambient, bez heavy metalu i hip-hopu. Głośność −14 LUFS, szczyt ≤ −1 dBTP (robi `render`).
+- **KOREKTA MUZYKI (Rodrigo, 23.11.2026) — nadrzędna wobec „pop/house” powyżej.** Film o ADHD miał muzykę zbyt
+  stridentną, zbyt „popową”, drażniącą. SENS to gabinet psychologiczny: nie dyskoteka i nie reklama środka czystości.
+  Muzyka ma być spójna z marką: ciepła, spokojna, pewna, nowoczesna; wspiera przekaz i nie przytłacza go.
+  - Styl domyślny: akustyczny/indie-folk z gitarą, miękkie piano, delikatny lo-fi/chillhop, ciepły pulsujący cinematic,
+    lekki rytm 70–95 BPM, perkusja szczotki/cichy kick. Wolno: delikatny akcent rytmiczny od 1. sekundy (bez nudnych padów).
+    NIE: EDM, house z mocnym sidechainem, jaskrawy pop-lead, ostre wysokie syntezatory, wysokie hi-haty, „drop” na całą moc.
+  - Głośność: muzyka ma być TŁEM (ok. −20 do −18 LUFS samej muzyki; całość po `render` ≤ −16 LUFS zamiast −14),
+    bez ostrych transjentów i bez ostrych wysokich częstotliwości (sprawdź spektrogram: brak energii „syczącej” 5–10 kHz).
+    Risery/uderzenia bardzo cicho albo wcale. Film o ADHD i tematy „głośne” emocjonalnie: jeszcze spokojniej, stały puls,
+    bez przeciążania (to widzowie, którzy mają przeciążenie).
+  - Przed wyborem stylu zrób RESEARCH (WebSearch): jakiej muzyki używają marki psychologiczne/wellbeing i treści
+    o zdrowiu psychicznym na TikToku/Reelsach (PL i świat), jakie gatunki i tempa; zapisz wnioski w DZIENNIK.md.
+    Preferuj prawdziwe, produkowane, bezpłatne do użytku komercyjnego utwory (Mixkit, Pixabay Music, YouTube Audio
+    Library, Free Music Archive – sprawdź licencję) albo bank instrumentów; zapisz źródło i licencję.
+  - Porównaj z poprzednimi filmami: jeśli któryś był „zbyt głośny/stridentny” (film o ADHD), nie powtarzaj jego stylu.
 
 ## Serie (rotacja, max 2 filmy tygodniowo w tym samym formacie)
 1. **„23:47”** — pytanie, które rodzic wpisuje w nocy w wyszukiwarkę → podpowiedzi innych rodziców
