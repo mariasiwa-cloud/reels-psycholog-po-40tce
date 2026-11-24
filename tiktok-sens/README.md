@@ -101,6 +101,6 @@ Teksty tygodnia: `TEKSTY_RRRR-MM-DD.md` (dzień, godzina, plik, opis, id posta w
   nadaje się do ponownego użycia w SENS. Przed zrobieniem filmów TikTok sprawdź `do_publikacji/` (najnowsze pliki):
   jeśli jest tam dzisiejsza lub wczorajsza rolka o kursie, użyj jej (wersja 9:16 bez zmian lub z drobną adaptacją i
   kartą końcową SENS) jako JEDEN z 5 filmów tygodnia zamiast robić nowy o tym samym.
-- Zdjęcia dr Marii Siwej: folder `fotos_maria/` w korzeniu repozytorium (czytaj `fotos_maria/README.md`). Można je
+- Zdjęcia dr Marii Siwej: TYLKO 06 i 07 (studyjne, „logo” Marii — Rodrigo 24.11.2026); 01–05, 08, 09 nie używać. Folder `fotos_maria/` w korzeniu repozytorium (czytaj `fotos_maria/README.md`). Można je
   wykorzystać w filmach SENS, gdy temat jest o Marii lub jej kursie; zasady: bez rozciągania, twarz w całości, bez
   filtrów, bez żartów z wyglądu, tylko zdjęcia z tego folderu.

@@ -1,4 +1,5 @@
-"""Rolka 09 — „Środek, nie koniec”: ZAKŁADKA (kurs, start pt 4 grudnia 2026).
+"""Rolka 09 (v2, poprawka Rodriga 24.11: szybciej, przekreślenie „Ostatni” → żółta karteczka „Środkowy.”,
+licznik „strona 186 z 372”, zdjęcie 07 studyjne) — „Środek, nie koniec”: ZAKŁADKA (kurs, start pt 4 grudnia 2026).
 
 Koncept w jednym zdaniu: menopauza to nie „ostatni rozdział”, tylko zakładka w połowie książki —
 a kolejne rozdziały to spis treści kursu.
@@ -21,8 +22,8 @@ sys.path.insert(0, os.path.join(HERE, "..", "tiktok-sens", "narzedzia"))
 from tt_base import *
 from tt_klipy import Clip, music_bed, render_av, smooth
 
-TOTAL = 29.5
-T_B, T_C, T_D, T_E = 5.0, 10.0, 19.6, 24.4
+TOTAL = 24.5
+T_B, T_C, T_D, T_E = 4.4, 8.4, 15.8, 19.4
 CX = 510
 IG_SAFE = (80, 250, 940, 1360)
 PAPER = (248, 242, 232)
@@ -69,9 +70,10 @@ def ribbon(length, w=74):
     return sh
 
 
-def photo03(w):
-    ph = Image.open(os.path.join(REPO, "fotos_maria", "03_fondo_verde_azulado_cardigan.jpg")).convert("RGB")
-    c = ph.crop((0, 150, 901, 1250))
+def photo07(w):
+    # zdjęcie „logo” Marii (studyjne, Rodrigo 24.11: tylko 06 i 07)
+    ph = Image.open(os.path.join(REPO, "fotos_maria", "07_estudio_fondo_negro_retrato_horizontal.jpg")).convert("RGB")
+    c = ph.crop((500, 10, 1240, 900))
     h = int(w * c.height / c.width)  # tylko równomierne skalowanie
     c = c.resize((w, h), Image.LANCZOS)
     mask = Image.new("L", (w, h), 0)
@@ -118,6 +120,18 @@ def prep():
     Q["a_small"] = text_sprite(["Menopauza."], font(B, 62), LAVD, pad=0)
     Q["a_big"] = text_sprite(["Ostatni rozdział?"], fit_font(["Ostatni rozdział?"], XB, 104, 760), INK, pad=4)
     Q["a_card"] = paper_card([Q["a_small"], Q["a_big"]], gap=4, pad=(56, 40))
+    fb = fit_font(["Ostatni rozdział?"], XB, 104, 760)
+    w = max(Q["a_small"].width, Q["a_big"].width) + 112
+    bx = 70 + (w - Q["a_big"].width) // 2 + 4
+    by = 70 + 40 + Q["a_small"].height + 4 + 4 + int(fb.getmetrics()[0] * 0.62)
+    Q["strike"] = (bx - 8, bx + int(fb.getlength("Ostatni")) + 8, by)
+    note = text_sprite(["Środkowy."], font(CV, 108), INK, pad=0)
+    st = Image.new("RGBA", (note.width + 80, note.height + 46), YEL + (255,))
+    st.alpha_composite(note, (40, 14))
+    sh = Image.new("RGBA", (st.width + 60, st.height + 60), (0, 0, 0, 0))
+    sm = Image.new("RGBA", st.size, (0, 0, 0, 90))
+    sh.alpha_composite(sm, (34, 40)); sh = sh.filter(ImageFilter.GaussianBlur(10)); sh.alpha_composite(st, (30, 30))
+    Q["sticky"] = sh.rotate(-4, resample=Image.BICUBIC, expand=True)
     Q["b_no"] = text_sprite(["Nie."], font(XB, 132), LAVD, pad=0)
     bl = ["To zakładka", "w połowie książki."]
     Q["b_txt"] = text_sprite(bl, fit_font(bl, XB, 84, 720), INK, gap=1.06, pad=2)
@@ -133,7 +147,7 @@ def prep():
     dl = ["6 spotkań · stacjonarnie w SENS", "ul. Dyrekcyjna 37/47, Wrocław"]
     Q["d_info"] = paper_card([text_sprite(dl, fit_font(dl, M, 42, 720), INK, gap=1.2, pad=2)], pad=(44, 28))
     # karta końcowa
-    Q["e_photo"] = photo03(360)
+    Q["e_photo"] = photo07(360)
     sg = ["dr Maria Siwa — psycholożka i psychodietetyczka,", "psychoterapeutka CBT w trakcie szkolenia"]
     Q["e_sig"] = text_sprite(sg, fit_font(sg, M, 34, 860), INK, gap=1.2, pad=6)
     Q["e_ke"] = text_sprite(["Każda emocja ma sens."], font(CV, 82), LAVD, pad=6)
@@ -171,11 +185,11 @@ def draw_page(im, t):
     s = smooth(tt / 0.7)
     pg = Q["page"].copy()
     for i, r in enumerate(Q["rows"]):
-        a = ramp(tt, 0.9 + i * 0.75, 0.45)
+        a = ramp(tt, 0.7 + i * 0.45, 0.35)
         paste(pg, r, pg.width / 2 + 30 + 30 * (1 - a), 352 + i * 110, a)
-    a = ramp(tt, 5.0, 0.5)
+    a = ramp(tt, 3.1, 0.45)
     paste(pg, Q["page_note"], pg.width / 2, 916, a)
-    a = ramp(tt, 5.6, 0.5)
+    a = ramp(tt, 3.5, 0.45)
     paste(pg, Q["page_small"], pg.width / 2, 1066, a)
     fr, m = card_sprite(pg.width, pg.height, r=18, fill=PAPER, shadow=(0, 0, 0, 110))
     fr.paste(pg, (m, m))
@@ -208,7 +222,17 @@ def frame(t):
         shade(im)
         # hak widoczny od klatki 0
         a = 1 - ramp(t, T_B - 0.35, 0.35)
-        paste(im, Q["a_card"], CX, 470, a)
+        card = Q["a_card"].copy()
+        p = smooth((t - 1.7) / 0.45)
+        if p > 0:
+            x0, x1, y = Q["strike"]
+            ImageDraw.Draw(card).line([(x0, y), (x0 + (x1 - x0) * p, y - 6 * p)], fill=LAVD + (255,), width=11)
+        paste(im, card, CX, 470, a)
+        k = smooth((t - 2.05) / 0.3)
+        if k > 0:
+            sc = 1.25 - 0.25 * k
+            stc = Q["sticky"].resize((int(Q["sticky"].width * sc), int(Q["sticky"].height * sc)), Image.BICUBIC)
+            paste(im, stc, CX + 60, 760, min(1, k * 1.3) * a)
         return im
     if t < T_C + 0.8:
         shade(im)
@@ -220,8 +244,10 @@ def frame(t):
         paste(im, rib, CX + 310, ry, out)
         a = ramp(tt, 0.35, 0.4) * out
         paste(im, Q["b_card"], CX - 30, 560 + 18 * (1 - a), a)
-        f = ramp(tt, 2.4, 0.45) * out
-        paste(im, Q["b_fact"], CX, 1180 + 18 * (1 - f), f)
+        f = ramp(tt, 0.8, 0.4) * out
+        n = int(round(186 * smooth((tt - 1.0) / 1.2)))
+        ctr = text_sprite([[("strona ", INK), (f"{n}", LAVD), (" z 372", INK)]], font(B, 52), INK, pad=2)
+        paste(im, paper_card([ctr], w=520, pad=(40, 26)), CX, 1180 + 18 * (1 - f), f)
         if t >= T_C:
             draw_page(im, t)
         return im
@@ -260,10 +286,10 @@ if __name__ == "__main__":
     if sys.argv[1] == "test":
         out = sys.argv[2]
         os.makedirs(out, exist_ok=True)
-        test_sheet([0.0, 3.0, 5.6, 8.5], f"{out}/s1.jpg")
-        test_sheet([10.4, 13.0, 17.0, 19.3], f"{out}/s2.jpg")
-        test_sheet([20.2, 23.0, 25.0, 28.5], f"{out}/s3.jpg")
-        for t in [0.0, 8.5, 17.0, 23.0, 28.5]:
+        test_sheet([0.0, 1.9, 3.0, 6.5], f"{out}/s1.jpg")
+        test_sheet([8.8, 11.0, 13.0, 15.5], f"{out}/s2.jpg")
+        test_sheet([16.4, 18.5, 20.0, 23.5], f"{out}/s3.jpg")
+        for t in [3.0, 6.5, 23.5]:
             frame(t).convert("RGB").save(f"{out}/f_{t}.jpg", quality=88)
     else:
         wav = sys.argv[2] + ".wav"

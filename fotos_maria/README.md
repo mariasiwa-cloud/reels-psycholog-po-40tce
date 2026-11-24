@@ -1,5 +1,12 @@
 # Zdjęcia dr Marii Siwej (do rolek i filmów)
 
+## ZASADA NADRZĘDNA (Rodrigo, 24.11.2026)
+W rolkach i filmach (Instagram @psycholog_po_40tce, TikTok i Instagram SENS) używamy WYŁĄCZNIE dwóch zdjęć studyjnych:
+`06_estudio_fondo_negro_blazer_cuerpo.jpg` i `07_estudio_fondo_negro_retrato_horizontal.jpg`.
+To „logo” Marii — ludzie je rozpoznają. Zdjęć 01–05, 08, 09 (plenerowe/selfie) NIE używać nigdzie, dopóki
+Rodrigo nie doda nowego zdjęcia. Nie zmieniać zdjęć „dla różnorodności” — różnorodność daje koncept, nie zdjęcie.
+Poniższe stare zasady o rotowaniu zdjęć są nieaktualne.
+
 Wybrane i zmniejszone (max 1600 px, bez metadanych) przez Rodriga 23.11.2026. Zdjęcia z innymi osobami,
 z alkoholem lub w mało reprezentacyjnych sytuacjach zostały celowo pominięte i nie ma ich w repozytorium.
 
@@ -8,7 +15,7 @@ Zasady użycia (obowiązkowe):
   Kadrowanie tylko tak, by twarz była w całości, nie ucięta i nie za blisko krawędzi ani strefy interfejsu.
 - Bez filtrów zmieniających twarz, bez „upiększania” AI, bez dodawania ani usuwania elementów, bez efektów komicznych,
   bez żartów z wyglądu Marii. Ma wyglądać profesjonalnie, ciepło i naturalnie. Wolno delikatnie dobrać jasność/kontrast.
-- Na profilu @psycholog_po_40tce NIE powtarzać w kółko zwykłego zdjęcia studyjnego (06, 07): pokazywać też inne
+- (NIEAKTUALNE od 24.11.2026) Na profilu @psycholog_po_40tce NIE powtarzać w kółko zwykłego zdjęcia studyjnego (06, 07): pokazywać też inne
   (plenerowe, ciepłe), zmieniając je z dnia na dzień i dopasowując do tematu rolki. Zdjęcia plenerowe pasują do tematów
   o spokoju, wieku bez wstydu, odpoczynku; studyjne do treści eksperckich i karty końcowej z podpisem.
 - Przy filmach w poziomie (07, 08) użyć tła rozmytego/kolorowego z palety SENS albo wykadrować tak, by twarz nie była
