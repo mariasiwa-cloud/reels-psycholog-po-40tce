@@ -1,36 +1,32 @@
-# Zdjęcia dr Marii Siwej (do rolek i filmów)
+# Zdjęcie dr Marii Siwej (do rolek i filmów)
 
-## ZASADA NADRZĘDNA (Rodrigo, 24.11.2026)
-W rolkach i filmach (Instagram @psycholog_po_40tce, TikTok i Instagram SENS) używamy WYŁĄCZNIE dwóch zdjęć studyjnych:
-`06_estudio_fondo_negro_blazer_cuerpo.jpg` i `07_estudio_fondo_negro_retrato_horizontal.jpg`.
-To „logo” Marii — ludzie je rozpoznają. Zdjęć 01–05, 08, 09 (plenerowe/selfie) NIE używać nigdzie, dopóki
-Rodrigo nie doda nowego zdjęcia. Nie zmieniać zdjęć „dla różnorodności” — różnorodność daje koncept, nie zdjęcie.
-Poniższe stare zasady o rotowaniu zdjęć są nieaktualne.
+## ZASADA NADRZĘDNA (Rodrigo, 27.11.2026 — obowiązuje, dopóki Rodrigo nie powie inaczej)
+We WSZYSTKICH rolkach i filmach (Instagram @psycholog_po_40tce, TikTok i Instagram SENS) używamy WYŁĄCZNIE jednego,
+oficjalnego zdjęcia: **`maria_siwa_oficjalne.jpg`** (portret firmowy: turkusowy żakiet, czarna koszulka, skrzyżowane ręce,
+jasne kremowe tło; pion 1023×1537).
+- Wszystkie wcześniejsze zdjęcia (01–09: selfie, plenerowe i studyjne na czarnym tle) zostały usunięte — nie używać ich
+  nigdzie, także z historii gita ani z gotowych rolek.
+- Żadnych innych zdjęć Marii: ani „losowych” obrazów, ani grafik czy postaci wygenerowanych przez AI, ani kadrów z innych źródeł.
+- To samo zdjęcie w każdym filmie jest zamierzone (to „logo” Marii). Różnorodność daje koncept filmu, nie zdjęcie.
+- Stare skrypty w `narzedzia/` (rolka_06, 06b, 09, 10, 11) wskazują usunięte pliki — przy ponownym renderze podmienić
+  na `maria_siwa_oficjalne.jpg`.
+- Rolki z do_publikacji/ ze starymi zdjęciami nie nadają się już do ponownego użycia (Rodrigo usunął z TikToka rolkę o kursie
+  ze starym zdjęciem).
 
-Wybrane i zmniejszone (max 1600 px, bez metadanych) przez Rodriga 23.11.2026. Zdjęcia z innymi osobami,
-z alkoholem lub w mało reprezentacyjnych sytuacjach zostały celowo pominięte i nie ma ich w repozytorium.
-
-Zasady użycia (obowiązkowe):
-- Nigdy nie rozciągać, nie ściskać, nie deformować twarzy ani sylwetki. Zachować proporcje (skalować tylko równomiernie).
-  Kadrowanie tylko tak, by twarz była w całości, nie ucięta i nie za blisko krawędzi ani strefy interfejsu.
-- Bez filtrów zmieniających twarz, bez „upiększania” AI, bez dodawania ani usuwania elementów, bez efektów komicznych,
-  bez żartów z wyglądu Marii. Ma wyglądać profesjonalnie, ciepło i naturalnie. Wolno delikatnie dobrać jasność/kontrast.
-- (NIEAKTUALNE od 24.11.2026) Na profilu @psycholog_po_40tce NIE powtarzać w kółko zwykłego zdjęcia studyjnego (06, 07): pokazywać też inne
-  (plenerowe, ciepłe), zmieniając je z dnia na dzień i dopasowując do tematu rolki. Zdjęcia plenerowe pasują do tematów
-  o spokoju, wieku bez wstydu, odpoczynku; studyjne do treści eksperckich i karty końcowej z podpisem.
-- Przy filmach w poziomie (07, 08) użyć tła rozmytego/kolorowego z palety SENS albo wykadrować tak, by twarz nie była
-  mała; nie ucinać głowy.
-- Nie używać zdjęć dzieci ani osób trzecich. Nie podpisywać zdjęć wymyślonymi faktami o Marii.
-- Zdjęcia służą rolkom Marii oraz, gdy temat pasuje (np. kurs „Środek, nie koniec”), materiałom SENS.
+## Zasady użycia (obowiązkowe)
+- Nigdy nie rozciągać, nie ściskać, nie deformować twarzy ani sylwetki. Skalować tylko równomiernie.
+  Kadrowanie tylko tak, by twarz była w całości, nie ucięta i nie za blisko krawędzi ani strefy interfejsu (TikTok/IG:
+  tekst i twarz w x 80–940, y 250–1360).
+- Dobre kadry: cała postać do pasa (karta końcowa), albo popiersie od czubka głowy do łokci; tło zdjęcia jest kremowe
+  i pasuje do palety SENS — można je łagodnie przedłużyć tym samym kolorem, bez zmiany samej postaci.
+- Bez filtrów zmieniających twarz, bez „upiększania” AI, bez dodawania ani usuwania elementów (także napisu na koszulce),
+  bez efektów komicznych, bez żartów z wyglądu Marii. Ma wyglądać profesjonalnie, ciepło i naturalnie. Wolno delikatnie
+  dobrać jasność/kontrast.
+- Podpis pod zdjęciem tylko zgodny z faktami: „dr Maria Siwa — psycholożka i psychodietetyczka, psychoterapeutka CBT
+  w trakcie szkolenia”. Nie dopisywać wymyślonych faktów o Marii.
+- Zdjęcie jest opcjonalne: tylko gdy wzmacnia koncept (np. hak z Marią albo karta końcowa), nie jako dekoracja.
+  W filmach SENS — tylko gdy temat dotyczy Marii lub jej kursu.
 
 | Plik | Opis |
 |---|---|
-| 01_plaza_tenerife_gafas_cielo_azul | pion, plaża, okulary przeciwsłoneczne, błękitne niebo |
-| 02_playa_baltyk_selfie_atardecer | pion, selfie, morze, zachód słońca, okulary na głowie |
-| 03_fondo_verde_azulado_cardigan | pion, selfie, petrolowa ściana, kardigan w paski |
-| 04_blusa_morada_fondo_crema | pion, selfie, kremowa ściana, fioletowa bluzka |
-| 05_bosque_pinos_gafas_en_pelo | pion, selfie, sosny, okulary na głowie |
-| 06_estudio_fondo_negro_blazer_cuerpo | pion, zdjęcie studyjne, granatowy żakiet, skrzyżowane ręce |
-| 07_estudio_fondo_negro_retrato_horizontal | poziom, portret studyjny |
-| 08_ferry_rayas_gafas_sol | poziom, prom, w paski, okulary |
-| 09_barco_atardecer_gafas | pion, łódź, zachód słońca |
+| maria_siwa_oficjalne.jpg | pion, portret firmowy, turkusowy żakiet, skrzyżowane ręce, kremowe tło (jedyne dozwolone) |

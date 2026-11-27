@@ -79,3 +79,11 @@
   w pracy (wersja pod LinkedIn).
 - Do sprawdzenia w przyszłym tygodniu: wynik testu „Bateria” (nowy format), czy CTA „wyślij/zapisz” daje udostępnienia,
   czy prawdziwe nagrania podnoszą wyświetlenia vs karty z tekstem.
+
+## 2026-11-27 — feedback Rodriga (zdjęcia Marii)
+- Rodrigo usunął z TikToka reuse rolki o kursie (tt_07_reuse_srodek_nie_koniec, post PostSyncer 186788, publikacja czw 26.11
+  19:30) — nie spodobała mu się (stare zdjęcie Marii w karcie końcowej).
+- Od teraz we wszystkich rolkach tylko jedno zdjęcie Marii: `fotos_maria/maria_siwa_oficjalne.jpg` (portret firmowy);
+  zdjęcia 01–09 usunięte z repozytorium. Reuse rolek Marii tylko bez zdjęcia albo z tym zdjęciem.
+- Rodrigo sam wrzuca na TikToka nowy film o ADHD — Claude przygotował mu opis (w rozmowie). Przy analizie w przyszłym
+  tygodniu uwzględnić ten film i nie powtarzać jego tematu.
